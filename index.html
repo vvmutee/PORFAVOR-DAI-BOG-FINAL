@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PORFAVOR — Essentials Lookbook</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+<header id="siteHeader" class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo-link" href="#">
+      <img id="headerLogo" src="static/images/logo.png" alt="PORFAVOR logo" />
+    </a>
+
+    <nav class="top-nav" id="topNav">
+      <a href="#collection">Коллекция</a>
+      <a href="#about">О бренде</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button id="burger" class="burger" aria-label="menu">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <a href="#collection">Коллекция</a>
+    <a href="#about">О бренде</a>
+    <a href="#contacts">Контакты</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-single">
+    <div class="hero-text">
+      <h1 class="brand-title">PORFAVOR</h1>
+      <h2 class="line-1">ESSENTIAL COLLECTION</h2>
+      <p class="year">2025</p>
+      <a class="btn-ghost" href="#collection">Посмотреть коллекцию</a>
+    </div>
+  </div>
+</section>
+
+<section class="spotlight wrap">
+  <div class="spotlight-inner">
+    <div class="spotlight-media">
+      <img class="spot-gif" src="static/images/spot1.gif" alt="spot" />
+    </div>
+
+    <div class="spotlight-info">
+      <h3 class="product-title">PORFAVOR TEE — MODEL C</h3>
+      <p class="price">2000 ₽</p>
+      <p class="desc">Минималистичная футболка премиального качества. Мягкий хлопок, аккуратная посадка.</p>
+      <div class="actions">
+        <button class="btn order-now" data-product='{"id":1,"title":"PORFAVOR TEE — MODEL C","price":2000,"img":"static/images/look3.jpg"}'>Купить</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collection" class="lookbook wrap">
+  <h2 class="section-title">Коллекция</h2>
+
+  <div class="grid grid-3" id="productGrid">
+    <figure class="grid-item product-card" data-id="1" data-title="Model A" data-price="2000" data-img="static/images/look1.jpg">
+      <img src="static/images/look1.jpg" alt="look1" loading="lazy">
+      <div class="price-tag">2000 ₽</div>
+    </figure>
+
+    <figure class="grid-item product-card" data-id="2" data-title="Model B" data-price="2000" data-img="static/images/look2.jpg">
+      <img src="static/images/look2.jpg" alt="look2" loading="lazy">
+      <div class="price-tag">2000 ₽</div>
+    </figure>
+
+    <figure class="grid-item product-card" data-id="3" data-title="Model C" data-price="2000" data-img="static/images/look3.jpg">
+      <img src="static/images/look3.jpg" alt="look3" loading="lazy">
+      <div class="price-tag">2000 ₽</div>
+    </figure>
+
+    <figure class="grid-item product-card" data-id="4" data-title="Model D" data-price="2000" data-img="static/images/look4.jpg">
+      <img src="static/images/look4.jpg" alt="look4" loading="lazy">
+      <div class="price-tag">2000 ₽</div>
+    </figure>
+
+    <figure class="grid-item product-card" data-id="5" data-title="Model E" data-price="2000" data-img="static/images/look5.jpg">
+      <img src="static/images/look5.jpg" alt="look5" loading="lazy">
+      <div class="price-tag">2000 ₽</div>
+    </figure>
+
+    <figure class="grid-item product-card" data-id="6" data-title="Model F" data-price="2000" data-img="static/images/look6.jpg">
+      <img src="static/images/look6.jpg" alt="look6" loading="lazy">
+      <div class="price-tag">2000 ₽</div>
+    </figure>
+  </div>
+</section>
+
+<div id="productModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close-modal" aria-label="close">✕</button>
+
+    <div class="modal-left">
+      <img id="modalImage" src="" alt="product">
+    </div>
+
+    <div class="modal-right">
+      <h2 id="modalTitle">Название</h2>
+      <p id="modalPrice" class="modal-price">2000 ₽</p>
+      <p id="modalDesc" class="modal-desc">Описание товара</p>
+
+      <div class="sizes" id="sizeList">
+        <button class="size" data-size="S">S</button>
+        <button class="size" data-size="M">M</button>
+        <button class="size" data-size="L">L</button>
+        <button class="size" data-size="XL">XL</button>
+      </div>
+
+      <div class="modal-actions">
+        <button id="toOrder" class="btn order-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="about wrap">
+  <h2 class="section-title">О PORFAVOR</h2>
+  <p>PORFAVOR — минималистичный бренд, внимание к посадке и материалу.</p>
+</section>
+
+<section id="contacts" class="contacts wrap">
+  <h2 class="section-title">Контакты</h2>
+  <p>Email: hello@porfavor.example</p>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2025 PORFAVOR — All rights reserved</p>
+  </div>
+</footer>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
